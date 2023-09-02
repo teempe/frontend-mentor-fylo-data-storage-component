@@ -1,3 +1,15 @@
+:root {
+  --ff-base: "Raleway", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --color-pale-blue: #DBD9FF;
+  --color-grayish-blue: #0C122C;
+  --color-dark-blue: #1E2D69;
+  --color-very-dark-blue: #0F1B3D;
+  --color-white: #FFF;
+  --color-linear-gradient: linear-gradient(#FFA197, #FF4A95);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +26,11 @@ html {
 }
 
 body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 1.4rem;
+  color: var(--color-pale-blue);
+  background-color: var(--color-very-dark-blue);
   display: grid;
   justify-content: center;
   align-content: center;
