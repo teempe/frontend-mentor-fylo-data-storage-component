@@ -41,4 +41,29 @@
             font-weight: var(--fw-bold);
         }
     }
+
+    @include media-screen-min($bp-desktop) {
+        grid-template-columns: 35rem 54rem;
+        grid-template-rows: 1fr 15.4rem;
+        column-gap: 3rem;
+        row-gap: 0;
+
+        &__header {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        &__content {
+            grid-column: 2/3;
+            grid-row: 2/3;
+
+            padding: 4rem;
+            text-align: left;
+
+            & .usage-badge {
+                left: 32.1rem;
+                bottom: 12.9rem;
+            }
+        }
+    }
 }

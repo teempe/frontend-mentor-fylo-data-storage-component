@@ -11,8 +11,11 @@
     justify-content: space-between;
     align-items: center;
 
+    position: relative;
+
     &__storage-left {
         font-size: 4rem;
+        line-height: 4rem;
     }
 
     &__text {
@@ -20,5 +23,18 @@
         letter-spacing: 0.1rem;
         text-transform: uppercase;
         opacity: 0.5;
+    }
+
+    @include media-screen-min($bp-desktop) {
+        border-bottom-right-radius: 0rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            right: 0rem;
+            border: 1.1rem solid;
+            border-color: var(--color-white) var(--color-white) transparent transparent;
+        }
     }
 }
