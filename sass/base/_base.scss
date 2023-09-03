@@ -36,7 +36,7 @@ body {
     font-weight: var(--fw-regular);
     font-size: 1.4rem;
     color: var(--color-pale-blue);
-    background-color: var(--color-very-dark-blue);
+    background: no-repeat center top / contain url('../images/bg-mobile.png'), var(--color-very-dark-blue);
 
     // center content on page
     display: grid;
@@ -44,4 +44,9 @@ body {
     align-content: center;
     min-height: 100vh;
     overflow-x: hidden;
+
+    @include media-screen-min($bp-desktop) {
+        background: no-repeat center bottom / contain url('../images/bg-desktop.png'), var(--color-very-dark-blue);
+    }
 }
+
