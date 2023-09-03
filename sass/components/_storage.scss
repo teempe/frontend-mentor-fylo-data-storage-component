@@ -1,7 +1,9 @@
 @import './usage-slider';
+@import './usage-badge';
 
 .storage {
-    width: 32.6rem;
+    display: grid;
+    grid-template-columns: 32.6rem;
 
     &__content {
         background-color: var(--color-dark-blue);
@@ -12,7 +14,17 @@
         display: flex;
         flex-direction: column;
         gap: 1.9rem;
+
+        position: relative;
+
+        & .usage-badge {
+            position: absolute;
+            left: 7.4rem;
+            bottom: -3.6rem;
+        }
     }
 
-
+    & .storage-used {
+        font-weight: var(--fw-bold);
+    }
 }

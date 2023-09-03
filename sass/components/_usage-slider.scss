@@ -1,10 +1,6 @@
 .usage-slider {
     --usage: 82%;
 
-    $track-color: var(--color-very-dark-blue);
-    $thumb-color: var(--color-white);
-    $progress-color: var(--color-linear-gradient);
-
     $thumb-size: 1rem;
     $thumb-spacing: 0.2rem;
 
@@ -19,8 +15,8 @@
         width: $track-width;
         height: $track-height;
         border-radius: calc($track-height / 2);
-        border: 0.3rem solid $track-color;
-        background-color: $track-color;
+        border: 0.3rem solid  var(--color-very-dark-blue);
+        background-color:  var(--color-very-dark-blue);
         position: relative;
     }
 
@@ -28,14 +24,14 @@
         width: clamp(calc($thumb-size + 2 * $thumb-spacing), var(--usage), 100%);
         height: 100%;
         border-radius: 0.7rem;
-        background: $progress-color;
+        background: var(--color-linear-gradient);
     }
 
     &__thumb {
         width: $thumb-size;
         height: $thumb-size;
         border-radius: 50%;
-        background-color: $thumb-color;
+        background-color: var(--color-white);
         position: absolute;
         left: max($thumb-spacing, calc(var(--usage) - $thumb-size - $thumb-spacing));
         top: $thumb-spacing;
