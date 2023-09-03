@@ -38,6 +38,20 @@ body {
   overflow-x: hidden;
 }
 
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.header-icons__icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: var(--color-very-dark-blue);
+  border-radius: 1rem;
+  display: grid;
+  place-content: center;
+}
+
 .usage-slider {
   --usage: 82%;
   display: flex;
@@ -98,6 +112,15 @@ body {
 .storage {
   display: grid;
   grid-template-columns: 32.6rem;
+  row-gap: 1.6rem;
+}
+.storage__header {
+  background-color: var(--color-dark-blue);
+  padding: 4rem;
+  border-radius: 1rem;
+  border-top-right-radius: 10rem;
+  display: grid;
+  gap: 3.3rem;
 }
 .storage__content {
   background-color: var(--color-dark-blue);

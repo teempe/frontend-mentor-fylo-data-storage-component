@@ -1,9 +1,21 @@
+@import './header-icons';
 @import './usage-slider';
 @import './usage-badge';
 
 .storage {
     display: grid;
     grid-template-columns: 32.6rem;
+    row-gap: 1.6rem;
+
+    &__header {
+        background-color: var(--color-dark-blue);
+        padding: 4rem;
+        border-radius: 1rem;
+        border-top-right-radius: 10rem;
+
+        display: grid;
+        gap: 3.3rem;
+    }
 
     &__content {
         background-color: var(--color-dark-blue);

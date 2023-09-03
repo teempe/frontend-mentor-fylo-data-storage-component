@@ -1,0 +1,14 @@
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    &__icon {
+        width: 4.8rem;
+        height: 4.8rem;
+        background-color: var(--color-very-dark-blue);
+        border-radius: 1rem;
+        display: grid;
+        place-content: center;
+    }
+}
